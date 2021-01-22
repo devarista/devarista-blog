@@ -1,5 +1,7 @@
 <template>
-	<div class="bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+	<div
+		class="bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-200 min-h-screen"
+	>
 		<LazyNavbar />
 		<div class="mx-4 md:container md:mx-auto lg:px-36 pb-8">
 			<Nuxt />

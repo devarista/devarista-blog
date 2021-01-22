@@ -14,8 +14,8 @@
 				>Diunggah pada :
 				{{ $moment(latestArticle.createdAt).format("DD MMMM YYYY") }}</span
 			>
-			<div class="text-base">
-				{{ latestArticle.content }}
+			<div class="text-base truncate break-all" v-html="latestArticle.content">
+				...
 			</div>
 			<n-link
 				:to="`/artikel/${latestArticle.slug}`"

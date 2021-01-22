@@ -7,8 +7,8 @@
 			Diunggah pada :
 			{{ $moment(article.createdAt).format("DD MMMM YYYY") }}
 		</span>
-		<img src="@/assets/images/james.jpg" class="object-cover" />
-		<p>{{ article.content }}</p>
+		<!-- <img src="@/assets/images/james.jpg" class="object-cover" /> -->
+		<p v-html="article.content"></p>
 	</div>
 </template>
 

@@ -42,8 +42,10 @@
 						>Diunggah pada :
 						{{ $moment(article.createdAt).format("DD MMMM YYYY") }}</span
 					>
-					<span class="text-base">
-						{{ article.content.toString().slice(0, 360) }}...
+					<span
+						class="text-base"
+						v-html="article.content.toString().slice(100, 360)"
+					>
 					</span>
 					<n-link
 						:to="`/artikel/${article.slug}`"
