@@ -1,5 +1,5 @@
 <template>
-	<div class="flex flex-col space-y-3">
+	<div class="flex flex-col space-y-3 w-full">
 		<h1 class="font-bold text-4xl">
 			{{ article.title }}
 		</h1>
@@ -8,7 +8,10 @@
 			{{ $moment(article.createdAt).format("DD MMMM YYYY") }}
 		</span>
 		<!-- <img src="@/assets/images/james.jpg" class="object-cover" /> -->
-		<p v-html="article.content"></p>
+		<div
+			class="prose prose-xl text-gray-800 dark:text-gray-100"
+			v-html="article.content"
+		></div>
 	</div>
 </template>
 

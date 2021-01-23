@@ -14,7 +14,7 @@
 				>Diunggah pada :
 				{{ $moment(latestArticle.createdAt).format("DD MMMM YYYY") }}</span
 			>
-			<div class="text-base truncate break-all" v-html="latestArticle.content">
+			<div class="text-base line-clamp-4" v-html="latestArticle.content">
 				...
 			</div>
 			<n-link
