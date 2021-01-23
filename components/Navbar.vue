@@ -22,7 +22,7 @@
 							v-model="search"
 							@keypress.enter="searchArticle"
 							placeholder="Belajar vue..."
-							class="text-sm md:text-base rounded-md w-20 bg-transparent dark:bg-transparent focus:outline-none border-none focus:border-0 py-0 px-0 ring-0 focus:ring-0"
+							class="text-sm md:text-base rounded-md w-20 md:w-auto bg-transparent dark:bg-transparent focus:outline-none border-none focus:border-0 py-0 px-0 ring-0 focus:ring-0"
 						/>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
