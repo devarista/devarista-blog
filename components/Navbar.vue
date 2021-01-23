@@ -1,7 +1,7 @@
 <template>
 	<div class="border border-b border-gray-200 dark:border-gray-900 mb-6">
 		<div class="mx-4 md:container md:mx-auto py-4">
-			<div class="flex flex-row justify-between items-center">
+			<div class="flex justify-between items-center">
 				<div class="flex space-x-9 items-center">
 					<n-link to="/" class="text-xl md:text-2xl font-medium"
 						>Devarista</n-link
@@ -15,14 +15,14 @@
 				</div>
 				<div class="flex space-x-4">
 					<div
-						class="rounded-md bg-gray-200 dark:bg-gray-900 flex items-center space-x-2 py-1 px-4"
+						class="w-auto rounded-md bg-gray-200 dark:bg-gray-900 flex items-center space-x-2 py-1 px-4"
 					>
 						<input
 							type="text"
 							v-model="search"
 							@keypress.enter="searchArticle"
 							placeholder="Belajar vue..."
-							class="text-sm md:text-base rounded-md bg-transparent dark:bg-transparent focus:outline-none border-none focus:border-0 py-0 px-0 ring-0 focus:ring-0"
+							class="text-sm md:text-base rounded-md w-20 bg-transparent dark:bg-transparent focus:outline-none border-none focus:border-0 py-0 px-0 ring-0 focus:ring-0"
 						/>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
